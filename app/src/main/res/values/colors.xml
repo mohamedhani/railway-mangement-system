@@ -8,4 +8,6 @@
     <color name="transparent">#00000000</color>
     <color name="gradStar">#19AA8B</color>
     <color name="gradStop">#23A7DB</color>
+    <color name="borderless_button">#FFFFFF</color>
+
 </resources>
