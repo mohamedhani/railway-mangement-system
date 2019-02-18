@@ -40,6 +40,15 @@
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
         android:id="@+id/btnLogin"/>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="10px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btnLinkToRegisterScreen"
