@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mohamed.railwaymangementsystem">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".LoginPackage.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +21,18 @@
         <activity
             android:name=".UserAccount"
             android:label="@string/title_activity_user_account"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LoginPackage.Registration" />
+        <activity android:name=".LoginPackage.VerficationActivity" />
+        <activity android:name=".LoginPackage.PasswordRecoveryActivity" />
+        <activity android:name=".Fragments.TrainSchudlingFragment" />
+        <activity android:name=".Fragments.TrainLocationFragement" />
+        <activity
+            android:name=".TimeTableActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".LoginPackage.BeforLoginActivity" />
+        <activity android:name=".Fragments.UserComplaintsFragment" />
+        <activity android:name=".Fragments.AdminComplaintsFragment"></activity>
     </application>
 
 </manifest>

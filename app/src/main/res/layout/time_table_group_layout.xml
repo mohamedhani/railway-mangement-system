@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="130px"
+    android:layout_marginTop="30px"
+
+    android:orientation="horizontal">
+    >
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:id="@+id/station_no_tV"
+        tools:text="عدد\n المحطات"
+        android:minLines="2"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"
+
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:gravity="center"
+        tools:text="الدرجه"
+        android:textSize="20sp"
+        android:id="@+id/train_degree_tv"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"
+
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        tools:text="السرعه"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/speed_tv"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"
+
+        android:background="@color/dark_gray"
+        />
+
+    <TextView
+        android:layout_width="1px"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:id="@+id/duration_tv"
+        tools:text="المده"
+        />
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"
+
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:gravity="center"
+        android:background="@color/gray"
+        android:layout_height="match_parent"
+        tools:text="وصول"
+        android:id="@+id/arrive_tv"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"
+
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        tools:text="مغادره"
+        android:id="@+id/leave_tv"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="20px"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        />
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:gravity="center"
+        tools:text="قطار"
+        android:id="@+id/train_tv"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

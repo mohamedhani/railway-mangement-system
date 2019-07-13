@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket : "
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20189"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:id="@+id/ticket_dialog_tv"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20189"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:id="@+id/email_dialog_tv"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TrainNo : "
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20189"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:id="@+id/train_no_dialog_tv"
+
+            />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message : "
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="20189"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:id="@+id/message_dialog_tv"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:background="#40aaaaaa"
+        android:id="@+id/complaint_dialog_btn"
+        android:layout_marginHorizontal="20dp"/>
+</LinearLayout>

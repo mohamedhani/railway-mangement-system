@@ -6,17 +6,27 @@ import java.util.ArrayList;
  * Created by mohamed on 2/20/2019.
  */
 
-public class UserData {
-    private  String email , password , imgURl ;
+public class User {
+    private  String email , password , imgURl , firstName,lastName , gender;
     private ArrayList<Train> savedTrains ;
 
-    public UserData(String email, String password, String imgURl, ArrayList<Train> savedTrains) {
+    public User(String email, String password, String imgURl, String firstName, String lastName, String gender, ArrayList<Train> savedTrains) {
         this.email = email;
         this.password = password;
         this.imgURl = imgURl;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
         this.savedTrains = savedTrains;
     }
 
+    public User(String email, String password, String firstName, String lastName, String gender) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+    }
 
     public String getEmail() {
         return email;
