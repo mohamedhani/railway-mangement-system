@@ -7,7 +7,8 @@ import java.sql.Time;
  */
 
 public class Station {
-  private   String name , arrivalTime ;
+  private   String name , arrivalTime  ;
+  private  double longitude , lattuide ;
 
     public String getName() {
         return name;
@@ -21,4 +22,20 @@ public class Station {
         this.name = name;
         this.arrivalTime=arrivalTime;
     }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public Station(String name, double longitude, double lattuide) {
+        this.name = name;
+        this.longitude = longitude;
+        this.lattuide = lattuide;
+    }
+
+    public double getLattuide() {
+        return lattuide;
+    }
+
+
 }

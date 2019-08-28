@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 
 import com.example.mohamed.railwaymangementsystem.modules.Station;
 import com.example.mohamed.railwaymangementsystem.modules.Train;
@@ -240,6 +241,24 @@ return  null;
         cursor.moveToFirst();
         String station =cursor.getString( cursor.getColumnIndex("stationName" ));
         return station;
+    }
+    public  ArrayList<Station> getStationInfo()
+    {
+        String query = "select * from station";
+        Cursor cursor = database.rawQuery(query,null);
+        cursor.moveToFirst();
+        ArrayList<Station> arrayList = new ArrayList<>();
+        while(!cursor.isAfterLast())
+        {   String stationName = cursor.getString(cursor.getColumnIndex("stationName"));
+
+            double longitude =  Double.parseDouble(cursor.getString(cursor.getColumnIndex("longitude") ));
+            double latitude  = Double.parseDouble(cursor.getString(cursor.getColumnIndex("latitude")));
+
+            arrayList.add(new Station(stationName,longitude,latitude));
+            cursor.moveToNext();
+        }
+        return  arrayList;
+
     }
 
 }

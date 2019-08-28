@@ -8,7 +8,6 @@
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
-
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         <activity android:name=".LoginPackage.LoginActivity">
@@ -32,7 +31,8 @@
             android:screenOrientation="landscape" />
         <activity android:name=".LoginPackage.BeforLoginActivity" />
         <activity android:name=".Fragments.UserComplaintsFragment" />
-        <activity android:name=".Fragments.AdminComplaintsFragment"></activity>
+        <activity android:name=".Fragments.AdminComplaintsFragment" />
+        <activity android:name=".TrackingActivity"></activity>
     </application>
 
 </manifest>
